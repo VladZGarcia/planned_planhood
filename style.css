@@ -22,9 +22,99 @@ html {
 
 /* min body height */
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  max-width:max-content;
   min-height: 100vh;
 }
 
+header {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1024px;
+  padding: 1rem;
+  background-color: var(--clr-primary-light-2);
+  box-shadow: var(--border-shadow);
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20rem;
+  padding: 0.5rem;
+  background-color: var(--clr-primary-light-3);
+
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 10rem;
+}
+/* make sure images are responsive */
+figure img {
+  width: 3.5rem;
+  height: auto;
+}
+h1 {
+  color: var(--clr-green-800);
+  width: 2.5rem;
+  height: 2.5rem;
+  text-transform: uppercase;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link-items {
+  text-transform: uppercase;
+  color: var(--clr-green-800);
+  font-weight: var(--fw-600);
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1024px;
+  padding: 1rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+h2 {
+  color: var(--clr-green-900);
+  font-weight: var(--fw-600);
+  font-size: var(--fs-700);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+
+}
 /* responsive images/videos */
 img,
 picture,
@@ -53,9 +143,9 @@ figcaption {
 
 /* for container queries, landmarks as containers */
 body > :is(header, footer),
-main {
+/* main {
   container-type: inline-size;
-}
+} */
 
 /* remove list style but keep it as list for Safari browser - use with <ul role="list"> */
 [role="list"] {
@@ -78,8 +168,8 @@ main {
   --clr-green-100: hsl(169, 11%, 93%);
   --clr-green-200: hsl(169, 51%, 58%);
   --clr-green-400: hsl(169, 86%, 28%);
-  --clr-green-800: hsl(169, 86%, 12%);
-  --clr-green-900: hsl(169, 80%, 12%);
+  --clr-green-800: rgb(4, 57, 47);
+  --clr-green-900: rgb(6, 55, 46);
 
   --clr-robust: hsl(221, 63%, 32%);
   --clr-green: hsl(110, 63%, 32%);
