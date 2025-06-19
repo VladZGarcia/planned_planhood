@@ -32,7 +32,7 @@ body {
   background-color: var(--clr-neutral-100); */
 }
 
-header {
+header, footer {
   display:flex;
   justify-content: center;
   align-items: center;
