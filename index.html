@@ -9,14 +9,12 @@
   <body>
     <header>
       <nav>
-        <figure>
+        <figure class="logo">
           <img
             src="Assets/images/logo.svg"
             alt="Planned Planthood Logo"
             style="
-              filter: brightness(0) saturate(100%) invert(13%) sepia(77%)
-                saturate(747%) hue-rotate(117deg) brightness(90%) contrast(98%)
-                drop-shadow(0 0 0 rgb(4, 57, 47));
+                filter: brightness(0) saturate(100%) invert(34%) sepia(98%) saturate(749%) hue-rotate(120deg) brightness(93%) contrast(97%);
             "
           />
           <h1>Planned Planthood</h1>
@@ -37,21 +35,21 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main >
       <section class="hero">
         <h2>Uppskattade växter</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique,
           corporis ipsum.
         </p>
-        <div class="collage-grid">
+        <figure class="collage-grid">
           <img src="https://picsum.photos/seed/1/800" />
           <img src="https://picsum.photos/seed/2/800" />
           <img src="https://picsum.photos/seed/3/800" />
           <img src="https://picsum.photos/seed/4/800" />
           <img src="https://picsum.photos/seed/5/800" />
           <img src="https://picsum.photos/seed/6/800" />
-        </div>
+        </figure>
       </section>
 
       <section class="newsletter">
@@ -237,15 +235,23 @@
         </ul>
       </section>
 
-      <section>
-        Våra tidigare odlingar
-        <h4>
+      <section class="plantings-info">
+        <figure class="svgCircle">
+          <img
+            src="Assets/images/icon-seedling.svg"
+            alt="Illustration of planting"
+          />
+        </figure>
+        <div class="plantings">
+          <h2>Våra tidigare odlingar</h2>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
           ratione quia eos pariatur deserunt veritatis. Tenetur, ipsum! Iusto
           delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio
           nam quaerat doloribus?
-        </h4>
-        Planterade plantor
+        </p>
+        <a class="link-button" href="">Planterade plantor</a>
+        </div>
       </section>
     </main>
     <footer>
